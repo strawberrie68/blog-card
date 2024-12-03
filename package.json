@@ -5,11 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "deploy": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "export": "next build && next export",
-    "deploy": "gh-pages -d out",
-    "predeploy": "npm run build"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "15.0.3",
