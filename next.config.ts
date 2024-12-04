@@ -1,13 +1,17 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
-const NextConfig = {
-  output: 'export',
+const nextConfig: NextConfig = {
+  // Enable static exports for production
+  ...(process.env.NODE_ENV === 'production' ? {
+    output: 'export',
+    basePath: '/blog-card',
+    assetPrefix: '/blog-card'
+  } : {}),
+
+  // Common settings for both development and production
   images: {
     unoptimized: true
-  },
-  basePath: '/blog-card',
-  assetPrefix: '/blog-card',
+  }
 }
 
-
-export default NextConfig;
+export default nextConfig;

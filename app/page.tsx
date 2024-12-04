@@ -1,10 +1,10 @@
-import BlogCard from '../components/BlogCard';
-import SimpleLayout from '../components/layouts/SimpleLayout';
+import SimpleLayout from "@/components/layouts/SimpleLayout"
+import BlogCard from "@/components/BlogCard"
 
-export default function HomePage() {
+export default function Home() {
     return (
         <SimpleLayout>
             <BlogCard />
         </SimpleLayout>
-    );
+    )
 }
