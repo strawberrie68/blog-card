@@ -6,11 +6,9 @@ import { MdArrowForward } from "react-icons/md"
 const BlogCard = () => {
     return (
         <article className="w-[340px] flex flex-col bg-white rounded-lg">
-            <figure className="overflow-hidden rounded-t-lg">
+            <figure className="overflow-hidden rounded-t-lg h-[288px]">
                 <Image
                     src={room}
-                    width={388}
-                    height={288}
                     alt="Cozy living room."
                     className="object-cover w-full h-full"
                 />
